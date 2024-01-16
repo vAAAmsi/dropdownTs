@@ -35,7 +35,7 @@ const App: React.FC = () => {
   const handleItemClick = (item: Chip) => {
     setChips([...chips, { ...item, id: Date.now() }]);
     setInputValue('');
-    setIsDropdownVisible(false);
+    // setIsDropdownVisible(false);
   };
 
   const handleChipRemove = (id: number) => {
@@ -98,7 +98,7 @@ const App: React.FC = () => {
             )
           }
         </ul>
-      )}
+      )} 
     </div>
   );
 };
